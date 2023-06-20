@@ -1,0 +1,55 @@
+All information on a computer is taken back to the fundamental principle of a Bit. Bits are what every piece of information on a computer is made up of.
+
+The smallest size of data. It’s a boolean value and can be 1 or 0. Bits are combined to form larger data units. 
+
+4 Bits = 1 Nibble
+8 Bits = 1 Byte (8-bits)
+16 Bits = 2 Bytes = 1 Word
+1 kilobyte (kB) = 1000 bytes
+1 megabyte (MB) = 1000 kilobytes
+1 gigabyte (GB) = 1000 megabytes
+1 terabyte (TB) = 1000 gigabytes
+
+1 kB USED to be 1024.. Based on 2 to the power of X.
+But Kilo means something different and specific. It means 10^3 (1000).
+To fix this, the IEC (International Electro-technical Commission) introduced the KiB and others.
+1 byte is still 8 bits.
+1 kibibyte (KiB) is 1024 bytes.
+1 mebibyte (MiB) is 1024 kibibytes.
+1 gibibyte (GiB) is 1024 mebibytes.
+1 tebibyte (TiB) is 1024 gibibytes.
+
+DON’T MIX UP KiB AND kB!! THEY'RE NOT THE SAME.. some people still think that a kilobyte is 1024 bytes... but it's a KIBIBYTE that is equal to 1024 bytes. :)
+
+A bit is only between true/false, on/off.. like.. one/zero. We can compound this idea with basic math in order to communicate complicated numbers/info. This is basically how our computers go from 1's and 0's into full sentences that we read.
+Computers store data in interesting ways. To understand this, we should explore ways to count.
+
+Denary/Decimal (base10)
+Binary (base2, also what computers use)
+Hexadecimal (base16)
+
+What does a base mean? It's because we start with a base of the #. It's basic math. Base 10 means that we go up with powers of 10. Base 2 means that we work with powers of 2.
+
+Denary runs from 0 to 9. Those are all the available digits.
+If we want to count higher than 9, we need to start using more digits. 
+A denary 10 is different from a binary 10. Binary (1 and 0) is boolean for that reason (on or off), it’s not a decimal. That’s why we cannot express fractions in binary, which leads to rounding errors in floating point arithmetic.
+
+
+Anyways, think about the decimal 12. Think about it in terms of just two digits: 1 and 2. Now look at each digit's position. The 1 is really a 10. The 2.. is in the units position.
+How does this relate to any of our counting methods? It's right in front of us. This isn't a list of 1's and 0's, so it's not binary. It's not hex, for reasons I probably will explain later.
+It's a denary value -- a decimal. So to read it as such, we have to think about it in terms of powers of 10.
+
+There is one 10^1, and two 10^0 (which is 1). That's because if you do 10 + 1 + 1, you get 12.
+You might be wondering why we even did any of this math in the first place if we can just read it as 12 anyways (as we have since kindergarten).
+That's because we can translate between counting methods.
+
+In binary, we might see something like 10, but that value isn't actually a decimal ten. Ten, like a ten dollar bill. 
+In binary, 10 would be a decimal of 2. That's because binary works in terms of base2. So let's break up the code into digits again.
+
+Reading from right to left, we realize that the 1 represents one instance of 2. The 0 is zero instances of 1.
+
+(8) (4) (2) (1)
+..  ..   1   0
+
+Like that. So really, in decimal form, it's a 2.
+
